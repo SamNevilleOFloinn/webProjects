@@ -106,15 +106,10 @@ Firmstep Test Interview Program
 						
 					<?php
 						if (isset($_POST["submit"])) {
-							echo "Queue is here!";
-							
 							if (isset($_POST["service"])) {
 								$service = $_POST["service"];
 								$customer = $_POST["customer"];
 								$title = $_POST["title"];
-								echo "<p>$service</p>";
-								echo "<p>$customer</p>";
-								echo "<p>$title</p>";
 								
 								if($customer == "Citizen") {
 									$name = $title . " " . $_POST["first"] . " " . $_POST["last"];
